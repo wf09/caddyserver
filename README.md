@@ -6,3 +6,9 @@ chmod +x caddy.sh
 ./caddy.sh
 ```
 
+```shell
+wget https://github.com/wf09/caddyserver/raw/master/caddy.sh
+chmod +x caddy.sh
+./caddy.sh
+```
+
