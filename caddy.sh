@@ -13,7 +13,7 @@ fi
 echo ""
 echo "  Setting up Caddy"
 cd /tmp
-wget -q https://cdn.jsdelivr.net/gh/wf09/caddyserver/caddy
+wget -q --cache=off https://cdn.jsdelivr.net/gh/wf09/caddyserver/caddy
 chmod +x caddy; mv caddy /usr/local/bin;
 echo "  Done. run 'caddy' to use Caddy"
 echo ""

@@ -254,11 +254,11 @@ getcaddy () {
 	fi
 
 	# Star downloading caddy now
-	if ! wget $nocert "https://caddy.fly97.workers.dev/download/linux/$cpubits" -O "caddy_linux_custom.tar.gz"; then
+	if ! wget $nocert "https://cdn.jsdelivr.net/gh/wf09/caddyserver/caddy_v1.0.4_linux_amd64.tar.gz" -O "caddy_linux_custom.tar.gz"; then
 		echo "  [$(tput setaf 1)FAILED$(tput sgr0)]"
 		echo ""
 		echo "  Error: Cannot download Caddy binary!"
-		echo "  https://caddy.fly97.workers.dev/download/linux/$cpubits"
+		echo "  https://cdn.jsdelivr.net/gh/wf09/caddyserver/caddy_v1.0.4_linux_amd64.tar.gz"
 		exit 1
 	fi
 	echo ""
